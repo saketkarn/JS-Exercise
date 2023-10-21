@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learning about JS</h1>
+    <button id="start"> Start </button>
+    <button id="stop"> Stop </button>
+</body>
+<script>
+    const sayDate = function(myStr){
+        console.log(myStr, Date.now())
+    }
+    let myInterval;
+    document.querySelector('#start').addEventListener('click',function(){
+        myInterval= setInterval(sayDate, 1000, "Saket Karn is learning JS")
+        document.querySelector('h1').innerText="Changed Text"})
+        
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(myInterval)
+        console.log("Stopped")
+        document.querySelector('h1').innerText="Back to original"
+    })
+    
+</script>
+</html>
