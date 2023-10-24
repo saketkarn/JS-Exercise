@@ -120,3 +120,33 @@ fetch('https://jsonplaceholder.typicode.com/users')
 .catch(function(error){
     console.log(error)
 })
+
+//Promise.all
+let p1=new Promise(function(resolve, reject){
+    setTimeout(function(){
+        let c1=console.log("The first promise has been resolved")
+        resolve(c1)
+    },1000)
+})
+
+let p2=new Promise(function(resolve, reject){
+    setTimeout(function(){
+        let c2=console.log("The second promise has been resolved")
+        resolve(c2)
+    },2000)
+})
+
+let p3=new Promise(function(resolve, reject){
+    setTimeout(function(){
+        let c3=console.log("The third promise has been resolved")
+        resolve(c3)
+    },3000)
+})
+
+promiseFive.finally([p1,p2,p3])
+.then(function(result){
+    console.log(result)
+})
+.catch(function(error){
+    console.log("There's some issue with promise all")
+})
