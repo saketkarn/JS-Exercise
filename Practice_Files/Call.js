@@ -3,7 +3,6 @@ function setUsername(username){
     console.log("called");
 }
 
-
 function setAllDetails(username, email, password){
     setUsername.call(this, username) //Here, the above function is explicitly called and the above function would be using this username instead of it's own one.
     this.email=email
