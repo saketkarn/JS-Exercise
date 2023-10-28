@@ -1,3 +1,5 @@
+//Array
+
 const Marvel=["Thor","Hulk", "Spidy"]
 const DC=['A',"B","C"]
 
