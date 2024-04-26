@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" onkeyup="debounce()">
+</body>
+<script>
+    let counter=0
+    const searhFunction=()=>{
+        console.log("Fetching data ... "+ counter++)
+    }
+
+    const betterSearchFunction=function(fn,delay){
+        let timer;
+        return function(){
+            let context=this
+            clearTimeout(timer)
+            timer=setTimeout(()=>{
+                fn.apply(context,arguments)
+            },delay)
+        }
+    }
+
+    const debounce=betterSearchFunction(searhFunction,300)
+
+</script>
+</html>
