@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="pr">Try the promise</button>
+</body>
+<script>
+document.querySelector("#pr").addEventListener(("click"),()=>{
+    const p1= new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            console.log("state",p1)
+            resolve("Promise resolved")
+        },1000)
+    })
+
+    p1.then((message)=>{
+        console.log("state",p1)
+        console.log(message)
+    })
+})
+</script>
+</html>
