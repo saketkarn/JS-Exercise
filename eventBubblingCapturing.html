@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        <button class="child">Child Button</button>
+    </div>
+    <script>
+
+        const parent = document.querySelector(".parent")
+        const child = document.querySelector(".child")
+
+        parent.addEventListener("click",function(){
+            console.log("parent checked")
+        },true)
+
+        child.addEventListener("click",function(){
+            console.log("child checked")
+        },true)
+
+    </script>
+</body>
+</html>
