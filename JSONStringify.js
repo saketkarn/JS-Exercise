@@ -5,3 +5,8 @@ const json1= {name:"saket",age:25}
 const stringifiedJson1= JSON.stringify(json1)
 console.log(json1)
 console.log(stringifiedJson1)
+
+//To convert the string data back to normal format, we can use JSON.parse
+
+const originalJson=JSON.parse(stringifiedJson1)
+console.log(originalJson)
