@@ -30,3 +30,19 @@ console.log(obj2.name)
 obj2.social.facebook.ac1="new account"
 console.log(obj1.social.facebook.ac1) //older object's ac1 also got changed
 console.log(obj2.social.facebook.ac1)
+
+
+
+//Easy Code
+
+let obj1={
+  name:"Saket",
+  age:25
+}
+
+let obj2= obj1
+
+obj2.name="Karn"
+
+console.log(obj1.name)
+console.log(obj2.name)
