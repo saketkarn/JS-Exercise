@@ -39,3 +39,21 @@ console.log(copy);
 copy.social.facebook.ac1="changed"
 console.log(copy.social.facebook.ac1)
 console.log(obj1.social.facebook.ac1)
+
+
+//Easy Code
+
+let obj3={
+  name:"Saket",
+  age:25
+}
+
+let obj4= {
+  name:obj3.name,
+  age:obj3.age
+}
+
+obj4.name="Karn"
+
+console.log(obj3.name)
+console.log(obj4.name)
