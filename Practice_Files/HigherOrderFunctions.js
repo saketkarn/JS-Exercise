@@ -49,3 +49,23 @@ const maxValue=num.reduce(function(acc,curr){
     return acc
 },0)
 console.log(maxValue);
+
+
+
+
+
+// function print(callback){
+//   console.log("print function called")
+  
+//   return function(){
+//     console.log("Inside function called")
+//     callback()
+//   }
+// }
+
+// function callback(){
+//   console.log("callback function called")
+// }
+
+// let hoc=print(callback)
+// hoc()
