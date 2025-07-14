@@ -19,7 +19,7 @@
 // printFullName.call(secondObject,"Honolulu")
 
 
-// Bind method--- helps in function borrowing, works same as call method, just we need to pass the parameters as an array
+// Apply method--- helps in function borrowing, works same as call method, just we need to pass the parameters as an array
 
 // let firstObject={
 //     firstName:'Saket',
@@ -39,7 +39,7 @@
 
 // printFullName.apply(secondObject,["Honolulu"])
 
-//Apply method--- helps in function borrowing, works the same way, just while calling the function, we need to store it another variable which we need to call as a function
+//Bind method--- helps in function borrowing, works the same way, just while calling the function, we need to store it another variable which we need to call as a function
 
 let firstObject={
     firstName:'Saket',
