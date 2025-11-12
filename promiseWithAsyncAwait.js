@@ -17,3 +17,5 @@ async function handlePromise(){
     console.log(error)
   }
 }
+
+()
